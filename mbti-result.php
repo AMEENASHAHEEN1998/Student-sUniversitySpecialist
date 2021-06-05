@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <h1>نوع شخصيتك هو :</h1>
                     <h1 class="text-center"><?php echo getTitle($result);?> <?php echo $result ;?></h1>
                     <div class="mbti-img">
-                        <img class="h-100" src="./img/svgexport-4.png">
+                        <img class="h-100" src="./img/<?php echo $result;?>.png">
                     </div>
 
                 </div>

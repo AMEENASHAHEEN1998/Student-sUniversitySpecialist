@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-group">
 
                         <input type="number" min="50" max="100" name="avarage" class="d-R form-control rounded-pill text-dark" id="exampleInputPassword1"
-                               placeholder="ادخل المعدل" required>
+                               placeholder="ادخل المعدل" required onkeypress="return event.charCode >= 50">
                     </div>
                     <div class="text-center">
                         <button type="submit" class=" btn-background btn btn-primary rounded-pill px-5 mt-3">ارسل</button>
