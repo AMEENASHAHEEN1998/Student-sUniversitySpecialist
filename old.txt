@@ -1,0 +1,588 @@
+<!--<div class="container parent">
+    <div class="row nav-title">
+        <div class="h-title col-md-8 offset-md-1">
+            <h1>Identify Student's University Specialist</h1>
+        </div>
+        <div class="Logo">
+            <img src="layout/img/LogoOfUniversity.jpg" alt="Logo Of University">
+        </div>
+    </div>
+     <div class="bar">
+        <div>40%</div>
+    </div>
+    <div class="main row">
+        <div class="img col-lg-6 col-sm-12"><img src="layout/img/UniversityOfPalestine.png" alt="University Of Palestine">
+        </div>
+        <div class="questions col-lg-6 col-sm-12">
+            <form id="regForm" action="">
+
+                 Circles which indicates the steps of the form:
+                <div class="steps" style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </form>
+            <?php/* if ($do == 1) { ?>
+                <form action="questions.php?do=2" method="POST">
+                    <div class="tab">
+
+                        <label for="avarage">ادخل المعدل </label>
+                        <input type="number" name="avarage" id="avarage">
+
+                        <label for="department">ادخل الفرع</label>
+                        <select name="department" id="department">
+                            <option value=" " ></option>
+                            <option value="الفرع العلمي" >الفرع العلمي</option>
+                            <option value="الفرع الأدبي" >الفرع الأدبي</option>
+                        </select>
+                        <!--  بداية أسئلة التحفظ أو الانفتاح 5 أسئلة -->
+                        <?php
+                        $stm = $con->prepare("SELECT * FROM questions limit 5 offset 0 ");
+                        $stm->execute();
+                        $rows = $stm->fetchALL();
+                        // print_r($rows[1]);
+
+
+                        foreach ($rows as $row) {
+                            $i = intval($row['Q_ID']) - 1;
+
+                            // echo intval($row['Q_ID']);
+                            // echo "<br>";
+                            // echo "inlineRadioOptions['.$i.']";
+
+                            // echo $x;
+
+
+
+                        ?>
+
+                            <div class='form-group cont-qu'>
+                                <p><?php echo $row['question']; ?></p>
+
+
+
+                                <div>
+
+                                    <label>
+                                        <input type="radio" id="q1a1" name="<?php echo 'inlineRadioOptions[' . $i . ']'; ?>" required="required" value="<?php echo $row['true_answer']; ?>">
+                                        <span class="yes" for="q1a1">نعم</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="q1a2" name="<?php echo 'inlineRadioOptions[' . $i . ']'; ?>" required="required" value="<?php echo $row['false_answer']; ?>">
+                                        <span class="no" for="q1a2">لا</span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                        <?php
+
+                        }
+                        ?>
+                        <div style="overflow:auto;">
+                            <div class="text-center">
+                                <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
+                                <!--<button type="submit" id="nextBtn" onclick="nextPrev(1) "> <a href="index.php?do=2">التالي</a> </button>-->
+                                <input type="submit" id="nextBtn" class="btnNext" onclick="nextPrev(1) " value="التالي">
+                            </div>
+                        </div>
+
+                </form>
+        </div>
+        <?php
+                echo "<br>";*/
+        ?>
+
+    <?php/* } elseif ($do == 2) {
+                $_SESSION['inlineRadioOptions'][0] = $_POST['inlineRadioOptions'][0];
+                $_SESSION['inlineRadioOptions'][1] = $_POST['inlineRadioOptions'][1];
+                $_SESSION['inlineRadioOptions'][2] = $_POST['inlineRadioOptions'][2];
+                $_SESSION['inlineRadioOptions'][3] = $_POST['inlineRadioOptions'][3];
+                $_SESSION['inlineRadioOptions'][4] = $_POST['inlineRadioOptions'][4];
+
+
+    ?>
+        <form action="questions.php?do=3" method="POST">
+            <div class="tab">
+                <!--  بداية أسئلة التحفظ أو الانفتاح 5 أسئلة -->
+                <?php
+                $stm = $con->prepare("SELECT * FROM questions limit 5 offset 5 ");
+                $stm->execute();
+                $rows = $stm->fetchALL();
+                // print_r($rows[1]);
+
+
+                foreach ($rows as $row) {
+                    $i = intval($row['Q_ID']) - 1;
+
+                    // echo intval($row['Q_ID']);
+                    // echo "<br>";
+                    // echo "inlineRadioOptions['.$i.']";
+
+                    // echo $x;
+
+
+
+                ?>
+
+                    <div class='form-group cont-qu'>
+                        <p><?php echo $row['question']; ?></p>
+
+
+
+                        <div>
+                            <label>
+                                <input type="radio" id="q1a1" name="<?php echo 'inlineRadioOptions[' . $i . ']'; ?>" required="required" value="<?php echo $row['true_answer']; ?>">
+                                <span class="yes" for="q1a1">نعم</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="q1a2" name="<?php echo 'inlineRadioOptions[' . $i . ']'; ?>" required="required" value="<?php echo $row['false_answer']; ?>">
+                                <span class="no" for="q1a2">لا</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                <?php
+
+                }
+                ?>
+                <div style="overflow:auto;">
+                    <div class="text-center">
+                        <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
+                        <!--<button type="submit" id="nextBtn" onclick="nextPrev(1) "> <a href="index.php?do=3">التالي</a> </button>-->
+                        <input type="submit" id="nextBtn" onclick="nextPrev(1) " class="btnNext" value="التالي">
+
+                    </div>
+                </div>
+
+
+            </div>
+            <?php
+                echo "<br>";
+            ?>
+
+        <?php  } elseif ($do == 3) {
+                $_SESSION['inlineRadioOptions'][5] = $_POST['inlineRadioOptions'][5];
+                $_SESSION['inlineRadioOptions'][6] = $_POST['inlineRadioOptions'][6];
+                $_SESSION['inlineRadioOptions'][7] = $_POST['inlineRadioOptions'][7];
+                $_SESSION['inlineRadioOptions'][8] = $_POST['inlineRadioOptions'][8];
+                $_SESSION['inlineRadioOptions'][9] = $_POST['inlineRadioOptions'][9];
+        ?>
+            <form action="questions.php?do=4" method="POST">
+                <div class="tab">
+                    <!--  بداية أسئلة التحفظ أو الانفتاح 5 أسئلة -->
+                    <?php
+                    $stm = $con->prepare("SELECT * FROM questions limit 5 offset 10 ");
+                    $stm->execute();
+                    $rows = $stm->fetchALL();
+                    // print_r($rows[1]);
+
+
+                    foreach ($rows as $row) {
+                        $i = intval($row['Q_ID']) - 1;
+
+                        // echo intval($row['Q_ID']);
+                        // echo "<br>";
+                        // echo "inlineRadioOptions['.$i.']";
+
+                        // echo $x;
+
+
+
+                    ?>
+
+                        <div class='form-group cont-qu'>
+                            <p><?php echo $row['question']; ?></p>
+
+
+
+                            <div>
+                                <label>
+                                    <input type="radio" id="q1a1" name="<?php echo 'inlineRadioOptions[' . $i . ']'; ?>" required="required" value="<?php echo $row['true_answer']; ?>">
+                                    <span class="yes" for="q1a1">نعم</span>
+                                </label>
+                                <label>
+                                    <input type="radio" id="q1a2" name="<?php echo 'inlineRadioOptions[' . $i . ']'; ?>" required="required" value="<?php echo $row['false_answer']; ?>">
+                                    <span class="no" for="q1a2">لا</span>
+                                </label>
+                            </div>
+                        </div>
+
+
+                    <?php
+
+                    }
+                    ?>
+                    <div style="overflow:auto;">
+                        <div class="text-center">
+                            <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
+                            <!--<button type="submit" id="nextBtn" onclick="nextPrev(1) "> <a href="index.php?do=4">التالي</a> </button>-->
+                            <input type="submit" id="nextBtn" onclick="nextPrev(1) " class="btnNext" value="التالي">
+                        </div>
+                    </div>
+
+
+                </div>
+                <?php
+                echo "<br>";
+                ?>
+
+            <?php  } elseif ($do == 4) {
+                $_SESSION['inlineRadioOptions'][10] = $_POST['inlineRadioOptions'][10];
+                $_SESSION['inlineRadioOptions'][11] = $_POST['inlineRadioOptions'][11];
+                $_SESSION['inlineRadioOptions'][12] = $_POST['inlineRadioOptions'][12];
+                $_SESSION['inlineRadioOptions'][13] = $_POST['inlineRadioOptions'][13];
+                $_SESSION['inlineRadioOptions'][14] = $_POST['inlineRadioOptions'][14];
+
+            ?>
+                <form action="mbti-result.php" method="POST">
+                    <div class="tab">
+                        <!--  بداية أسئلة التحفظ أو الانفتاح 5 أسئلة -->
+                        <?php
+                        $stm = $con->prepare("SELECT * FROM questions limit 5 offset 15 ");
+                        $stm->execute();
+                        $rows = $stm->fetchALL();
+                        // print_r($rows[1]);
+
+
+                        foreach ($rows as $row) {
+                            $i = intval($row['Q_ID']) - 1;
+
+                            // echo intval($row['Q_ID']);
+                            // echo "<br>";
+                            // echo "inlineRadioOptions['.$i.']";
+
+                            // echo $x;
+
+
+
+                        ?>
+
+                            <div class='form-group cont-qu'>
+                                <p><?php echo $row['question']; ?></p>
+
+
+
+                                <div>
+                                    <label>
+                                        <input type="radio" id="q1a1" name="<?php echo 'inlineRadioOptions[' . $i . ']'; ?>" required="required" value="<?php echo $row['true_answer']; ?>">
+                                        <span class="yes" for="q1a1">نعم</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="q1a2" name="<?php echo 'inlineRadioOptions[' . $i . ']'; ?>" required="required" value="<?php echo $row['false_answer']; ?>">
+                                        <span class="no" for="q1a2">لا</span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+
+
+                        <?php
+
+                        }
+                        ?>
+
+                        <!--<select name="specialize" class="custom-select " id="" required> التخصص
+                            <option value=""></option>
+                            <option value="الطب">
+                                كلية الطب </option>
+
+                            <option value="الصيدلة">
+                                الصيدلة </option>
+
+                            <option value="التمريض">
+                                كلية التمريض
+                            </option>
+
+                            <option value="صيدلي">
+                                دكتور صيدلي
+                            </option>
+
+                            <option value="كلية الهندسة قسم البرمجيات">
+                                كلية الهندسة قسم البرمجيات
+                            </option>
+
+                            <option value="كلية الهندسة قسم العمارة ">
+                                كلية الهندسة قسم العمارة
+                            </option>
+
+                            <option value=" كلية الهندسة قسم المدني ">
+                                كلية الهندسة قسم المدني
+                            </option>
+
+                            <option value="كلية الهندسة معدات طبية">
+                                كلية الهندسة معدات طبية
+                            </option>
+
+                            <option value="   العلاقات العامة والتسويق">
+                                العلاقات العامة والتسويق
+                             </option>
+                            <option value=" كلية التربية قسم تعليم اساسي ">
+                                كلية التربية قسم تعليم اساسي
+                            </option>
+                            <option value="المحاسبة">
+                                كلية ادارة المال والاعمال قسم المحاسبة
+                            </option>
+
+
+                            <option value=" القانون باللغة العربية">
+                                القانون باللغة العربية </option>
+
+                            <option value="القانون باللغة الانجليزية ">
+                                القانون باللغة الانجليزية
+                            </option>
+
+                            <option value="كلية ادارة المال والاعمال قسم الادارة ">
+                                كلية ادارة المال والاعمال قسم الادارة
+                            </option>
+
+                            <option value="الاعلام">
+                                كلية الاعلام وتكنولوجيا المعلومات قسم الاعلام
+                            </option>
+
+                            <option value=" تغدية صحية">
+                                كلية العلوم الصحة قسم تغدية صحية
+                            </option>
+
+                            <option value="مساعد قانوني ">
+                                مساعد قانوني
+                            </option>
+
+                            <option value="مساعد طبيب أسنان ">
+                                مساعد طبيب أسنان
+                            </option>
+
+                            <option value="ادارة واتمتة مكاتب ">
+                                ادارة واتمتة مكاتب
+                            </option>
+
+                            <option value="محاسبة">
+                                كلية محاسبة
+                            </option>
+
+                        </select>-->
+
+
+
+                        <div style="overflow:auto;">
+                            <div class="text-center">
+                                <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
+                                <!--<button type="submit" id="nextBtn" > Submit </button>-->
+                                <input type="submit" id="nextBtn" class="btnNext" value="احفظ">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <?php
+                    echo "<br>";
+                    ?>
+                </form>
+            <?php  } */?>
+  // $I = 0;
+    // $E = 0;
+    // $N = 0;
+    // $S = 0;
+    // $F = 0;
+    // $T = 0;
+    // $P = 0;
+    // $J = 0;
+
+    // for($i = 0; $i < count($_SESSION['inlineRadioOptions']); ++$i) {
+
+    //     switch($_SESSION['inlineRadioOptions'][$i])
+
+    //     {
+    //         case('I'):
+    //             $I += 1;
+    //             break;
+    //         case('E'):
+    //             $E += 1;
+    //             break;
+    //         case('N'):
+    //             $N += 1;
+    //             break;
+    //         case('S'):
+    //             $S += 1;
+    //             break;
+    //         case('F'):
+    //             $F += 1;
+    //             break;
+    //         case('T'):
+    //             $T += 1;
+    //             break;
+    //         case('P'):
+    //             $P += 1;
+    //             break;
+    //         case('J'):
+    //             $J += 1;
+    //             break;
+
+    //     }
+    // }
+
+    // $result = '';
+    // if($I > $E){
+    //     $result .= 'I';
+    // }else{
+    //     $result .= 'E';
+    // }
+    // if($N > $S){
+    //     $result .= 'N';
+    // }else{
+    //     $result .= 'S';
+    // }
+    // if($F > $T){
+    //     $result .= 'F';
+    // }else{
+    //     $result .= 'T';
+    // }
+    // if($P > $J){
+    //     $result .= 'P';
+    // }else{
+    //     $result .= 'J';
+    // }
+    // // echo "<br>" . $result;
+
+    <!--
+        <div>التخصص الجامعي المناسب لشخصيتك
+            getSpecialization();</div> -->
+       <?php
+        /*$stm = $con->prepare("INSERT
+                                    INTO
+                                    eztrquestion(
+                                        Extro_Intro_1, Extro_Intro_2, Extro_Intro_3, Extro_Intro_4, Extro_Intro_5,
+                                        Sen_Int_1,Sen_Int_2 ,Sen_Int_3,Sen_Int_4 ,Sen_Int_5 ,
+                                        Thin_Feel_1 ,Thin_Feel_2,Thin_Feel_3,Thin_Feel_4,Thin_Feel_5
+                                        ,Jud_Per_1,Jud_Per_2 ,Jud_Per_3 ,Jud_Per_4 ,Jud_Per_5  ,
+                                        result ,specialize)
+
+                            VALUES(:zinl_1 ,:zinl_2 ,:zinl_3 ,:zinl_4 ,:zinl_5
+                                    ,:zinl_6 ,:zinl_7 ,:zinl_8 ,:zinl_9 ,:zinl_10
+                                    ,:zinl_11 ,:zinl_12 ,:zinl_13 ,:zinl_14 ,:zinl_15
+                                    ,:zinl_16 ,:zinl_17 ,:zinl_18 ,:zinl_19 ,:zinl_20 ,:zresult ,:zspecialize)");
+        $stm->execute(array(
+            'zinl_1' => $inl_0 ,
+            'zinl_2' => $inl_1 ,
+            'zinl_3' => $inl_2 ,
+            'zinl_4' =>  $inl_3 ,
+            'zinl_5' =>  $inl_4 ,
+            'zinl_6' =>  $inl_5 ,
+            'zinl_7' =>  $inl_6 ,
+            'zinl_8' =>  $inl_7 ,
+            'zinl_9' =>  $inl_8 ,
+            'zinl_10' =>  $inl_9 ,
+            'zinl_11' =>  $inl_10 ,
+            'zinl_12' =>  $inl_11,
+            'zinl_13' =>  $inl_12,
+            'zinl_14' =>  $inl_13 ,
+            'zinl_15' =>  $inl_14 ,
+            'zinl_16' =>  $inl_15 ,
+            'zinl_17' =>  $inl_16 ,
+            'zinl_18' =>  $inl_17 ,
+            'zinl_19' =>  $inl_18 ,
+            'zinl_20' =>  $inl_19 ,
+            'zresult'=> $result ,
+            'zspecialize' =>$specializes
+        ));*/
+        /*
+         * $collegeName = "";
+        if ($name == "Medicine"){
+            $collegeName = "كلية طب الأسنان";
+        }
+        elseif (strlen($name) == 11){
+            $collegeName = "كلية ادارة المال والأعمال قسم المحاسبة";
+        }
+        elseif ($name == "Faculty of Engineering Medical Equipment "){
+            $collegeName = "كلية الهندسة والتخطيط العمراني قسم هندسة المعدات الطبية";
+        }
+        elseif ($name == "College of Engineering, Department of Software "){
+            $collegeName = "كلية الهندسة والتخطيط العمراني قسم هندسة البرمجيات";
+        }
+        elseif ($name == "Multimedia technology"){
+            $collegeName = "كلية تكنولوجيا الوسائط المتعددة";
+        }
+        elseif ($name == "Manage and automate offices "){
+            $collegeName = "كلية إدارة وأتمتة المكاتب";
+        }
+        elseif ($name == "the pharmacy "){
+            $collegeName = "كلية الصيدلية";
+        }
+        elseif ($name == "College of Education, Department of English Language "){
+            $collegeName = "كلية التربية قسم اللغة الإنجليزية";
+        }
+        elseif ($name == "Information Technology "){
+            $collegeName = "كلية تكنولوجيا المعلومات";
+        }
+        elseif ($name == "Faculty of Engineering, Department of Architecture "){
+            $collegeName = "كلية الهندسة والتخطيط العمراني قسم هندسة العمارة";
+        }
+        elseif ($name == "Faculty of Engineering, Department of Civil "){
+            $collegeName = "كلية الهندسة والتخطيط العمراني قسم هندسة المدني";
+        }
+        elseif ($name == "College of Medicine and Health Sciences Department of Health Nutrition "){
+            $collegeName = "كلية الطب والعلوم الصحية قسم التغذية الصحية";
+        }
+        elseif ($name == "Faculty of Nursing "){
+            $collegeName = "كلية التمريض";
+        }
+        elseif ($name == "College of Education, Department of Basic Education "){
+            $collegeName = "كلية التربية قسم التعليم الأساسي";
+        }
+        elseif ($name == "nursing "){
+            $collegeName = "كلية التمريض";
+        }
+        elseif ($name == "media "){
+            $collegeName = "كلية الوسائط المتعددة";
+        }
+        elseif ($name == "Dental assistant "){
+            $collegeName = "دبلوم متوسط مساعد طبيب الاسنان";
+        }
+        elseif ($name == "Legal assistant "){
+            $collegeName = "دبلوم متوسط مساعد قانوني";
+        }
+        elseif ($name == "Public Relations and Marketing "){
+            $collegeName = "العلاقات العامة والتسويق";
+        }
+        elseif ($name == "Computerized College of Accounting "){
+            $collegeName = "دبلوم متوسط كلية المحاسبة المحوسبة";
+        }
+        elseif ($name == "Law in Arabic "){
+            $collegeName = "كلية القانون باللغة العربية";
+        }
+        elseif ($name == "Law in English "){
+            $collegeName = "كلية القانون باللغة الإنجليزية";
+        }
+        elseif ($name == "College of Business and Finance Administration Department of Administration "){
+            $collegeName = "كلية ادارة المال والأعمال قسم الادارة";
+        }
+        else {
+            $collegeName = "اسم الكلية غير متوفر في جامعة فلسطين";
+        }
+        echo $collegeName ;
+         */
+         }
+
+-->
+
+
+//echo $name . '<br>';
+    //echo gettype($name);
+    //echo strlen($name);
+    //$meme = "Manage and automate offices";
+    //echo strlen($meme);
+
+    //$name = "Multimedia technology";
+    //$outputString = explode(" ",$output);
+    //print_r($outputString) ;
+
+    //echo gettype($output) ;
+        //echo "------------------------";
+        //echo $output;
+        //echo gettype($output);
+        //echo "------------------------";
+        //$output = "['Multimedia technology']";
