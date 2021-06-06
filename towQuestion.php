@@ -34,8 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                     <div class="form-group">
 
-                        <input type="number" min="50" max="100" name="avarage" class="d-R form-control rounded-pill text-dark" id="exampleInputPassword1"
-                               placeholder="ادخل المعدل" required onkeypress="return event.charCode >= 50">
+                        <input type="number" min="0"
+                               oninput="this.value =!!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
+                               max="100" name="avarage" class="d-R form-control rounded-pill text-dark" id="exampleInputPassword1"
+                               placeholder="ادخل المعدل" >
                     </div>
                     <div class="text-center">
                         <button type="submit" class=" btn-background btn btn-primary rounded-pill px-5 mt-3">ارسل</button>
