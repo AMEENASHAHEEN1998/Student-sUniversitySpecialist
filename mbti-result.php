@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="container">
 
             <div class="row flex-column data text-right align-items-center text-white  ">
-                <div class="bg-primer-color w-66 px-5 d-flex j-f">
+                <div class="bg-primer-color w-66 px-5 d-flex j-f align-items-center">
                     <h1>نوع شخصيتك هو :</h1>
                     <h1 class="text-center"><?php echo getTitle($result);?> <?php echo $result ;?></h1>
                     <div class="mbti-img">
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 </div>
                 <div class="bg-primer-color w-66 m-20 px-5 Home-text ">
-                    <p ><?php echo getDescription($result);?></p>
+                    <p class="line font-t" ><?php echo getDescription($result);?></p>
                 </div>
                 <div class="bg-primer-color w-66">
                     <p class="font-bold font">
