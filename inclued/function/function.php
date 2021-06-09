@@ -413,7 +413,7 @@ function colageName($name){
         $collegeName = "كلية إدارة وأتمتة المكاتب";
     }
     elseif (strlen($name) == 13){
-        $collegeName = "كلية الصيدلية";
+        $collegeName = "كلية الصيدلة";
     }
     elseif (strlen($name) == 53){
         $collegeName = "كلية التربية قسم اللغة الإنجليزية";
