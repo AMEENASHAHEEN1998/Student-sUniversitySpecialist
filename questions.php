@@ -17,7 +17,8 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 
                     <!-- Circles which indicates the steps of the form: -->
                     <div class="steps" style="text-align:center;margin-top:40px;">
-                        <span class="step"></span>
+                    <!-- 1 -->
+                        <span style="opacity: 1" class="step"></span>
                         <span class="step"></span>
                         <span class="step"></span>
                         <span class="step"></span>
@@ -95,8 +96,9 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 
                     <!-- Circles which indicates the steps of the form: -->
                     <div class="steps" style="text-align:center;margin-top:40px;">
-                        <span class="step"></span>
-                        <span class="step"></span>
+                    <!-- 2 -->
+                        <span class="step finish"></span>
+                        <span style="opacity: 1" class="step"></span>
                         <span class="step"></span>
                         <span class="step"></span>
                     </div>
@@ -165,9 +167,10 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 
         <!-- Circles which indicates the steps of the form: -->
         <div class="steps" style="text-align:center;margin-top:40px;">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
+        <!-- 3 -->
+            <span class="step finish"></span>
+            <span class="step finish"></span>
+            <span style="opacity: 1" class="step"></span>
             <span class="step"></span>
         </div>
 
@@ -236,10 +239,11 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 
         <!-- Circles which indicates the steps of the form: -->
         <div class="steps" style="text-align:center;margin-top:40px;">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
+        <!-- 4 -->
+            <span class="step finish"></span>
+            <span class="step finish"></span>
+            <span class="step finish"></span>
+            <span style="opacity: 1" class="step"></span>
         </div>
 
 
@@ -289,7 +293,7 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 
 
         <div class="text-center" style="margin-top:40px">
-            <input type="submit" id="nextBtn" class="btn btn-info btn-lg" onclick="nextPrev(1) " value="التالي">
+            <input type="submit" id="nextBtn" class="btn btn-info btn-lg" onclick="nextPrev(1) " value="أرسل">
 
         </div>
     </form>
