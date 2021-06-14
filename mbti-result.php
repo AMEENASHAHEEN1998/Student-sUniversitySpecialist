@@ -68,8 +68,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $output = shell_exec("python script75-70S.py $string_question ");// تغدية صحية
     } elseif ($avarage >= 50 && $avarage < 65) {
         $output = shell_exec("python script65-50S.py $string_question ");//تخصصات الدبلوم
-    } elseif ($avarage >= 65 && $department == "الفرع الأدبي") {
+    } elseif ($avarage >= 75 && $department == "الفرع الأدبي" || $department == "الفرع الزراعي" || $department == "الفرع الشرعي"|| $department == "الفرع الريادي والاعمال") {
         $output = shell_exec("python script75A.py $string_question ");
+    } elseif ($avarage >= 65 && $department == "الفرع الأدبي" || $department == "الفرع الزراعي" || $department == "الفرع الشرعي"|| $department == "الفرع الريادي والاعمال") {
+        $output = shell_exec("python script65A.py $string_question ");
     } elseif ($avarage < 50) {
         $output = "The secondary school average is less than the required Please enter a valid rate";
     }

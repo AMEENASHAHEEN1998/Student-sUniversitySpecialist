@@ -27,7 +27,7 @@ for a in var1:
 
 # print(my_list)
 
-dataset = pd.read_csv('sqlA75.csv')
+dataset = pd.read_csv('sqlA.csv')
 X = dataset.iloc[:, 1:21].values
 y = dataset.iloc[:, -1].values
 # print(y)

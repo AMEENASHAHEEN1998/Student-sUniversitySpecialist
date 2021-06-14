@@ -12,11 +12,6 @@
 616,0,0,0,0,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,1,101,"College of Education, Department of English Language"
 617,0,0,0,0,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,1,101,"College of Education, Department of English Language"
 618,0,0,0,0,1,1,1,1,1,0,0,1,1,0,0,0,1,0,1,1,101,"College of Education, Department of English Language"
-627,1,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,101,College of Medicine and Health Sciences Department of Health Nutrition
-628,1,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,101,College of Medicine and Health Sciences Department of Health Nutrition
-629,1,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,101,College of Medicine and Health Sciences Department of Health Nutrition
-630,1,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,1,1,0,1,101,College of Medicine and Health Sciences Department of Health Nutrition
-631,0,1,1,1,1,0,0,0,1,0,1,1,1,0,1,0,1,0,0,1,1010,"College of Education, Department of English Language"
 634,0,0,1,1,1,0,1,0,0,0,1,1,1,1,1,0,1,0,1,0,1010,"College of Education, Department of English Language"
 635,1,0,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,111,Accounting
 636,1,0,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,111,Accounting
@@ -43,14 +38,14 @@
 711,0,1,1,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,1,1001,Computerized College of Accounting
 712,0,1,1,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,1,1001,Computerized College of Accounting
 713,0,1,1,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,1,1001,Computerized College of Accounting
+718,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1111,Faculty of Engineering Medical Equipment
+719,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1111,Faculty of Engineering Medical Equipment
+720,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1111,Faculty of Engineering Medical Equipment
+721,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,1,1111,Faculty of Engineering Medical Equipment
 722,1,0,0,1,0,1,1,0,0,1,1,1,0,1,0,1,0,1,1,1,1111,Faculty of Nursing
 723,1,0,0,1,0,1,1,0,0,1,1,1,0,1,0,1,0,1,1,1,1111,Faculty of Nursing
 724,1,0,0,1,0,1,1,0,0,1,1,1,0,1,0,1,0,1,1,1,1111,Faculty of Nursing
 725,1,0,0,1,0,1,1,0,0,1,1,1,0,1,0,1,0,1,1,1,1111,Faculty of Nursing
-726,0,1,1,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1111,College of Medicine and Health Sciences Department of Health Nutrition
-727,0,1,1,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1111,College of Medicine and Health Sciences Department of Health Nutrition
-728,0,1,1,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1111,College of Medicine and Health Sciences Department of Health Nutrition
-729,0,1,1,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1111,College of Medicine and Health Sciences Department of Health Nutrition
 730,1,1,0,1,0,1,1,0,1,1,1,1,0,1,0,1,0,1,0,0,1110,Law in Arabic
 731,1,1,0,1,0,1,1,0,1,1,1,1,0,1,0,1,0,1,0,0,1110,Law in Arabic
 732,1,1,0,1,0,1,1,0,1,1,1,1,0,1,0,1,0,1,0,0,1110,Law in Arabic
