@@ -1,22 +1,36 @@
 <?php
 session_start();
 include 'inclued/templates/Header.php';
+include 'inclued/templates/Header_Code.php';
 include 'connect.php';
 include 'inclued/function/function.php';
 //
 
 $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 ?>
-    <div class="bg-color">
-        <div class="container">
-            <div class="row data text-center">
+    <div class="container">
+    <div class="row data text-center">
+        <div class="qu-back">
+            <a href="#">
+
+                عودة
+            </a>
+        </div>
+
+
+        <div class="mx-auto prargraf">
+            <p> هذه الأسئلة تهدف لمعرفة شخصيتك<br> يحتوي البرنامج على 20 سؤال</p>
+            <hr />
+
+        </div>
                 <?php if ($do == 1) { ?>
                     <form action="questions.php?do=2" method="POST" id="regForm" class="col-12">
+                        <div class="col-12 " ><p >القسم الأول</p></div>
 
 
 
                     <!-- Circles which indicates the steps of the form: -->
-                    <div class="steps" style="text-align:center;margin-top:40px;">
+                    <div class="steps" style="text-align:center;margin-top:20px;">
                     <!-- 1 -->
                         <span style="opacity: 1" class="step"></span>
                         <span class="step"></span>
@@ -45,7 +59,6 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 
 
                         ?>
-
                         <div class="check-stat row">
                             <div class="col-6"><?php echo $row['question']; ?></div>
                             <div class="col-6">
@@ -92,6 +105,7 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
             ?>
             <form action="questions.php?do=3" method="POST" id="regForm" class="col-12">
 
+                <div class="col-12 " ><p >القسم الثاني</p></div>
 
 
                     <!-- Circles which indicates the steps of the form: -->
@@ -163,6 +177,7 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
             ?>
             <form action="questions.php?do=4" method="POST" id="regForm" class="col-12">
 
+                <div class="col-12 " ><p >القسم الثالث</p></div>
 
 
         <!-- Circles which indicates the steps of the form: -->
@@ -235,7 +250,7 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
                 ?>
             <form action="mbti-result.php" method="POST" id="regForm" class="col-12">
 
-
+                <div class="col-12 " ><p >القسم الرابع</p></div>
 
         <!-- Circles which indicates the steps of the form: -->
         <div class="steps" style="text-align:center;margin-top:40px;">
@@ -304,5 +319,7 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
     </div>
 
 <?php
-            include 'inclued/templates/Footer.php'
-            ?>
+include 'inclued/templates/Footer.php';
+include 'inclued/templates/Footer_Code.php';
+
+?>

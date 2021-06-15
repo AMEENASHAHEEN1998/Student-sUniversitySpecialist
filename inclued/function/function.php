@@ -410,7 +410,7 @@ function colageName($name){
         $collegeName = "كلية تكنولوجيا الوسائط المتعددة";
     }
     elseif (strlen($name) == 28){
-        $collegeName = "كلية إدارة وأتمتة المكاتب";
+        $collegeName = "دبلوم متوسط كلية إدارة وأتمتة المكاتب ";
     }
     elseif (strlen($name) == 13){
         $collegeName = "كلية الصيدلة";
@@ -440,7 +440,7 @@ function colageName($name){
         $collegeName = "كلية التمريض";
     }
     elseif (strlen($name) == 6){
-        $collegeName = "كلية الوسائط المتعددة";
+        $collegeName = "دبلوم متوسط كلية الوسائط المتعددة ";
     }
     elseif (strlen($name) == 17){
         $collegeName = "دبلوم متوسط مساعد طبيب الاسنان";
@@ -467,4 +467,58 @@ function colageName($name){
         $collegeName = "اسم الكلية غير متوفر في جامعة فلسطين";
     }
     return $collegeName ;
+}
+function getTitleEnglish($result){
+    if($result == "ENFP"){
+        $title ="struggler";
+
+    }elseif ($result == "INFP"){
+        $title ="Intuitive";
+
+    }elseif ($result == "ESFP"){
+        $title ="Sociologist";
+
+    }elseif ($result == "ENTP"){
+        $title ="Inspiring";
+
+    }elseif ($result == "ENFJ"){
+        $title ="Leader or Hero";
+
+    }elseif ($result == "ISTJ"){
+        $title ="Serious";
+
+    }elseif ($result == "ESTJ"){
+        $title ="Executive";
+
+    }elseif ($result == "INTJ"){
+        $title ="Leader";
+
+    }elseif ($result == "ISFJ"){
+        $title ="Jam";
+
+    }elseif ($result == "ISTP"){
+        $title ="logical";
+
+    }elseif ($result == "ENTJ"){
+        $title ="inspirational leader";
+
+    }elseif ($result == "INFJ"){
+        $title ="Intuitive leader";
+
+    }elseif ($result == "ESFJ"){
+        $title ="Relationship Manager";
+
+    }elseif ($result == "INTP"){
+        $title ="The thinker";
+
+    }elseif ($result == "ESTP"){
+        $title ="kinesthetic";
+
+    }elseif ($result == "ISFP"){
+        $title ="the artist";
+
+    }else{
+        echo "there is an error in mbti type";
+    }
+    return $title ;
 }

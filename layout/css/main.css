@@ -19,27 +19,79 @@ body {
   color: #fff;
 }
 .bg-primer-color {
-  background-color: #4e529e;
+  background-color: #314f6d;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 15px;
 }
+.primer-color {
+  color: #4e529e;
+}
+/*Start header*/
+.header {
+  background-color: #fff;
+  width: 100vw;
+  color: #4e529e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(63, 84, 108, 0.33);
+}
+@media (max-width: 575.98px) {
+  .header .toknow {
+    font-size: 16px;
+  }
+  .logo {
+    display: none;
+  }
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+/*End header*/
+/* Start footer */
+.footer {
+  background-color: #fff;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer span {
+  color: #4e529e;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* End footer */
 .Home-text {
-  line-height: 1.5;
+  line-height: 2;
 }
 .Home-bg,
 .bg-tow {
-  /* background-image: url(./img/Repeat\ Grid\ 1.png); */
-  background-image: url(../../img/cap.png);
-
+  background-image: url(../../img/Repeat\ Grid\ 1.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   opacity: 0.9;
 }
 .Home-bg .Home-Wight-bg {
   background-color: rgba(253, 253, 253, 0.8);
-
   border-radius: 20px;
   padding: 22px 40px;
 }
@@ -68,6 +120,33 @@ body {
   border: none;
 }
 /* End first pag */
+/* start tow */
+.percentage-f {
+  position: relative;
+}
+.percentage {
+  position: absolute;
+  left: 15px;
+  top: 37px;
+  color: #000;
+  font-size: 18px;
+}
+.form-height {
+  max-height: 100%;
+  min-height: 100vh;
+}
+.back {
+  outline: none;
+  color: #fff;
+  background-color: #314f6d;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  margin-right: -35px;
+  letter-spacing: 1px;
+}
+/* End tow */
 
 /* start questions pag */
 .d-R {
@@ -80,7 +159,7 @@ body {
   background-color: #ecf0f1;
   border-radius: 10px;
   margin: 20px auto;
-  padding: 37vh 20px;
+  padding-top: 70px;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 960px) {
@@ -121,7 +200,7 @@ input[type="radio"] {
 }
 
 .data {
-  padding: 18vh 20px;
+  /* padding: 18vh 20px; */
   direction: rtl;
 }
 
@@ -135,7 +214,42 @@ input[type="radio"] {
     padding: 150px 20px;
   }
 }
-
+.prargraf {
+  font-size: 20px;
+}
+.prargraf hr {
+  border-color: #000;
+  border-width: 1px;
+}
+.qu-back {
+  outline: none;
+  color: #fff;
+  background-color: #314f6d;
+  border: none;
+  padding: 7px 30px;
+  border-radius: 20px;
+  position: absolute;
+  right: 80px;
+  letter-spacing: 1px;
+}
+.qu-back a {
+  color: #fff;
+}
+.qu-back a:hover {
+  text-decoration: none;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .qu-back {
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .qu-back {
+    top: 20px;
+    right: 20px;
+  }
+}
 /* pagnation  */
 .tab {
   display: none;
@@ -201,13 +315,7 @@ input[type="radio"] {
   margin-bottom: 20px;
 }
 .mbti-img {
-  height: 158px;
-}
-.line {
-  line-height: 2;
-}
-.font-t{
-  font-size: 20px;
+  height: 56px;
 }
 .j-f {
   justify-content: space-evenly;
@@ -219,5 +327,34 @@ input[type="radio"] {
     align-items: center;
     text-align: center;
   }
+}
+.dataa {
+  position: relative;
+  font-weight: bold;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+.h-80 {
+  height: 80px;
+}
+.res-back {
+  outline: none;
+  color: #fff;
+  background-color: #314f6d;
+  border: none;
+  padding: 7px 30px;
+  border-radius: 20px;
+  position: absolute;
+  right: 80px;
+  letter-spacing: 1px;
+  top: 20px;
+}
+.res-back a {
+  color: #fff;
 }
 /* End result pag */

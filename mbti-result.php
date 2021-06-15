@@ -1,6 +1,7 @@
 <?php
 
 include 'inclued/templates/Header.php';
+include 'inclued/templates/Header_Code.php';
 include 'inclued/function/function.php';
 include 'connect.php';
 session_start();
@@ -94,29 +95,41 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-<div class="bg-color">
-        <div class="container">
+<div class="container">
 
-            <div class="row flex-column data text-right align-items-center text-white  ">
-                <div class="bg-primer-color w-66 px-5 d-flex j-f align-items-center">
-                    <h1>نوع شخصيتك هو :</h1>
-                    <h1 class="text-center"><?php echo getTitle($result);?> <?php echo $result ;?></h1>
-                    <div class="mbti-img">
-                        <img class="h-100" src="./img/<?php echo $result;?>.png">
-                    </div>
-
-                </div>
-                <div class="bg-primer-color w-66 m-20 px-5 Home-text ">
-                    <p class="line font-t" ><?php echo getDescription($result);?></p>
-                </div>
-                <div class="bg-primer-color w-66">
-                    <p class="font-bold font">
-                      <?php echo colageName($name);?>
-                    </p>
-
-                </div>
-
-            </div>
+    <div class="row flex-column dataa text-right align-items-center text-white  ">
+        <div class="res-back">
+            <a href="#">
+                عودة
+            </a>
         </div>
-    </div>
+        <div class="bg-primer-color w-66 px-5 d-flex j-f m-20 ">
+            <h1 class="align-self-center">شخصيتك </h1>
+            <h1 class="text-center"><?php echo getTitle($result);?> <?php echo $result ;?> <br /><?php echo getTitleEnglish($result);?></h1>
+            <div class="mbti-img">
+                <img class="h-80" src="./img/<?php echo $result;?>.png">
+            </div>
 
+        </div>
+        <div class="bg-primer-color w-66 m-20 ">
+            <p class="text-center font-bold ">التخصص الجامعي الذي يناسب شخصيتك </p>
+            <p class=" font-bold font">
+                <?php echo colageName($name);?>
+            </p>
+
+        </div>
+        <div class="bg-primer-color w-66 m-20 px-5 Home-text  ">
+            <p class="font-bold"> سمات شخصية القائد المفكر</p>
+            <p><?php echo getDescription($result);?></p>
+
+        </div>
+
+
+    </div>
+</div>
+
+<?php
+include 'inclued/templates/Footer.php';
+include 'inclued/templates/Footer_Code.php';
+
+?>
