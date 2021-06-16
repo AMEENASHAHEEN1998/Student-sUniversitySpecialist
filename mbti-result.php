@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <div class="row flex-column dataa text-right align-items-center text-white  ">
         <div class="res-back">
-            <a href="#">
+            <a href="index.php">
                 عودة
             </a>
         </div>

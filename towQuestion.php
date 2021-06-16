@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="container">
         <div class="row  text-right align-items-center justify-content-center form-height" >
             <div class="bg-black-color color">
-                <button class="back">عودة</button>
+                <button class="back" ><a href="index.php">عودة</a>  </button>
 
                 <form action="<?php $_SERVER['PHP_SELF']?>" method="POST">
                     <div class="form-group">

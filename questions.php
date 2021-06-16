@@ -11,7 +11,7 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
     <div class="container">
     <div class="row data text-center">
         <div class="qu-back">
-            <a href="#">
+            <a href="towQuestion.php">
 
                 عودة
             </a>
