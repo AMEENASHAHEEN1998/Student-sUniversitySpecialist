@@ -95,7 +95,9 @@ body {
   border-radius: 20px;
   padding: 22px 40px;
 }
-
+.pa-70 {
+  padding-bottom: 70px;
+}
 .Home-bg .Home-Wight-bg hr {
   width: 48.8vw;
   border: 1px solid #000;
@@ -126,7 +128,7 @@ body {
 }
 .percentage {
   position: absolute;
-  left: 15px;
+  left: 35px;
   top: 37px;
   color: #000;
   font-size: 18px;
