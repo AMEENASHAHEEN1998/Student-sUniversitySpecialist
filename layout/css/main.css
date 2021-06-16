@@ -148,6 +148,14 @@ body {
   margin-right: -35px;
   letter-spacing: 1px;
 }
+.back a {
+  color: #fff;
+  text-decoration: none;
+}
+.back a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 /* End tow */
 
 /* start questions pag */
@@ -237,9 +245,14 @@ input[type="radio"] {
 .qu-back a {
   color: #fff;
 }
+.qu-back a:link,
+.qu-back a:visited {
+  color: #fff;
+}
 .qu-back a:hover {
   text-decoration: none;
 }
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .qu-back {
     top: 20px;
@@ -357,6 +370,10 @@ input[type="radio"] {
   top: 20px;
 }
 .res-back a {
+  color: #fff;
+}
+.res-back a:link,
+.res-back a:visited {
   color: #fff;
 }
 /* End result pag */
