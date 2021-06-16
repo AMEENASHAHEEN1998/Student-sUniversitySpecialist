@@ -10,13 +10,14 @@ $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 ?>
     <div class="container">
     <div class="row data text-center">
+<?php if ($do == 1) { ?>
         <div class="qu-back">
             <a href="towQuestion.php">
 
                 عودة
             </a>
         </div>
-
+<?php }?>
 
         <div class="mx-auto prargraf">
             <p> هذه الأسئلة تهدف لمعرفة شخصيتك<br> يحتوي البرنامج على 20 سؤال</p>
