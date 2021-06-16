@@ -494,13 +494,13 @@ function getTitleEnglish($result){
         $title ="Leader";
 
     }elseif ($result == "ISFJ"){
-        $title ="Jam";
+        $title ="Instructor";
 
     }elseif ($result == "ISTP"){
         $title ="logical";
 
     }elseif ($result == "ENTJ"){
-        $title ="inspirational leader";
+        $title ="Inspirational leader";
 
     }elseif ($result == "INFJ"){
         $title ="Intuitive leader";
@@ -515,7 +515,7 @@ function getTitleEnglish($result){
         $title ="kinesthetic";
 
     }elseif ($result == "ISFP"){
-        $title ="the artist";
+        $title ="The artist";
 
     }else{
         echo "there is an error in mbti type";
