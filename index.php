@@ -9,7 +9,7 @@ include 'inclued/function/function.php';
 
     <div class="container ">
         <div class="d-flex vh-100 align-items-center justify-content-center">
-            <div class="row data text-right ">
+            <div class="row data text-right pa-70 ">
                 <div class="col-lg-6 ">
                     <div class="d-flex justify-content-end ">
                         <img src="./img/Group 100.png" class="img-fluid">
