@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-group">
 
                         <label for="exampleInputEmail1">فرع الثانوية العامة</label>
-                        <select class="custom-select rounded-pill text-dark d-R" id="exampleInputEmail1">
+                        <select class="custom-select rounded-pill text-dark d-R" id="exampleInputEmail1" name="department">
                             <option value="" disabled selected>--إختر الفرع--</option>
                             <option value="الفرع العلمي"> الفرع العلمي</option>
                             <option value="الفرع الأدبي"> الفرع الأدبي</option>
