@@ -8,8 +8,8 @@ include 'inclued/function/function.php';
 
 $do = isset($_GET['do']) ? $do = $_GET['do'] : $do = 1;
 ?>
-    <div class="container">
-    <div class="row data text-center">
+    <div class="container min-h">
+    <div class="row data text-center ">
 <?php if ($do == 1) { ?>
         <div class="qu-back">
             <a href="towQuestion.php">

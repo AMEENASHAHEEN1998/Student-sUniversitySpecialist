@@ -265,6 +265,9 @@ input[type="radio"] {
     right: 20px;
   }
 }
+.min-h {
+  min-height: 90vh;
+}
 /* pagnation  */
 .tab {
   display: none;
