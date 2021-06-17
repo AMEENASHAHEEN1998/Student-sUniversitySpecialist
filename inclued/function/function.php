@@ -395,49 +395,49 @@ function getTitle($result){
 function colageName($name){
     $collegeName = "";
     if (strlen($name) == 9){
-        $collegeName = "كلية طب الأسنان";
+        $collegeName = "   طب الأسنان كلية الطب وعلوم الصحة";
     }
     elseif (strlen($name) == 11){
-        $collegeName = "كلية ادارة المال والأعمال قسم المحاسبة";
+        $collegeName = " المحاسبة كلية ادارة المال والأعمال ";
     }
     elseif (strlen($name) == 41){
-        $collegeName = "كلية الهندسة والتخطيط العمراني قسم هندسة المعدات الطبية";
+        $collegeName = " هندسة المعدات الطبية كلية الهندسة والتخطيط العمراني ";
     }
     elseif (strlen($name) == 47){
-        $collegeName = "كلية الهندسة والتخطيط العمراني قسم هندسة البرمجيات";
+        $collegeName = " هندسة البرمجيات كلية الهندسة والتخطيط العمراني  ";
     }
     elseif (strlen($name) == 22){
-        $collegeName = "كلية تكنولوجيا الوسائط المتعددة";
+        $collegeName = " دبلوم متوسط كلية تكنولوجيا الوسائط المتعددة ";
     }
     elseif (strlen($name) == 28){
         $collegeName = "دبلوم متوسط كلية إدارة وأتمتة المكاتب ";
     }
     elseif (strlen($name) == 13){
-        $collegeName = "كلية الصيدلة";
+        $collegeName = " الصيدلة والتكنولوجيا الحيوية كلية الطب وعلوم الصحة";
     }
     elseif (strlen($name) == 53){
-        $collegeName = "كلية التربية قسم اللغة الإنجليزية";
+        $collegeName = "اللغة الإنجليزية كلية التربية  ";
     }
     elseif (strlen($name) == 23){
-        $collegeName = "كلية تكنولوجيا المعلومات";
+        $collegeName = " تكنولوجيا المعلومات كلية الاعلام وتكنولوجيا المعلومات";
     }
     elseif (strlen($name) == 51){
-        $collegeName = "كلية الهندسة والتخطيط العمراني قسم هندسة العمارة";
+        $collegeName = "هندسة معمارية كلية الهندسة والتخطيط العمراني  ";
     }
     elseif ($name == 44){
-        $collegeName = "كلية الهندسة والتخطيط العمراني قسم هندسة المدني";
+        $collegeName = "هندسة مدنية كلية الهندسة والتخطيط العمراني  ";
     }
     elseif (strlen($name) == 71){
-        $collegeName = "كلية الطب والعلوم الصحية قسم التغذية الصحية";
+        $collegeName = "التغذية الصحية كلية الطب والعلوم الصحية  ";
     }
     elseif (strlen($name) == 19){
-        $collegeName = "كلية التمريض";
+        $collegeName = " دبلوم متوسط كلية التمريض";
     }
     elseif (strlen($name) == 52){
-        $collegeName = "كلية التربية قسم التعليم الأساسي";
+        $collegeName = "  التعليم الأساسي كلية التربية ";
     }
     elseif (strlen($name) == 8){
-        $collegeName = "كلية التمريض";
+        $collegeName = " دبلوم متوسط كلية التمريض";
     }
     elseif (strlen($name) == 6){
         $collegeName = "دبلوم متوسط كلية الوسائط المتعددة ";
@@ -449,19 +449,19 @@ function colageName($name){
         $collegeName = "دبلوم متوسط مساعد قانوني";
     }
     elseif (strlen($name) == 31){
-        $collegeName = "العلاقات العامة والتسويق";
+        $collegeName = " دبلوم متوسط العلاقات العامة والتسويق";
     }
     elseif (strlen($name) == 35){
         $collegeName = "دبلوم متوسط كلية المحاسبة المحوسبة";
     }
     elseif (strlen($name) == 14){
-        $collegeName = "كلية القانون باللغة العربية";
+        $collegeName = " القانون باللغة العربية كلية القانون ";
     }
     elseif (strlen($name) == 15){
-        $collegeName = "كلية القانون باللغة الإنجليزية";
+        $collegeName = "   القانون باللغة الإنجليزية كلية القانون";
     }
     elseif (strlen($name) ==76 ){
-        $collegeName = "كلية ادارة المال والأعمال قسم الادارة";
+        $collegeName = " الادارة كلية ادارة المال والأعمال  ";
     }
     else {
         $collegeName = "اسم الكلية غير متوفر في جامعة فلسطين";
@@ -470,52 +470,52 @@ function colageName($name){
 }
 function getTitleEnglish($result){
     if($result == "ENFP"){
-        $title ="struggler";
+        $title ="Campaigner";
 
     }elseif ($result == "INFP"){
-        $title ="Intuitive";
+        $title ="Mediator";
 
     }elseif ($result == "ESFP"){
-        $title ="Sociologist";
+        $title ="Entertainer";
 
     }elseif ($result == "ENTP"){
-        $title ="Inspiring";
+        $title ="Debater";
 
     }elseif ($result == "ENFJ"){
-        $title ="Leader or Hero";
+        $title ="Protagonist";
 
     }elseif ($result == "ISTJ"){
-        $title ="Serious";
+        $title ="Logistician";
 
     }elseif ($result == "ESTJ"){
         $title ="Executive";
 
     }elseif ($result == "INTJ"){
-        $title ="Leader";
+        $title ="Architect";
 
     }elseif ($result == "ISFJ"){
-        $title ="Instructor";
+        $title ="Defender";
 
     }elseif ($result == "ISTP"){
-        $title ="logical";
+        $title ="Virtuoso";
 
     }elseif ($result == "ENTJ"){
-        $title ="Inspirational leader";
+        $title ="Commander";
 
     }elseif ($result == "INFJ"){
-        $title ="Intuitive leader";
+        $title ="Advocate";
 
     }elseif ($result == "ESFJ"){
-        $title ="Relationship Manager";
+        $title ="Consul";
 
     }elseif ($result == "INTP"){
-        $title ="The thinker";
+        $title ="Logician";
 
     }elseif ($result == "ESTP"){
-        $title ="kinesthetic";
+        $title ="Entrepreneur";
 
     }elseif ($result == "ISFP"){
-        $title ="The artist";
+        $title ="Adventurer";
 
     }else{
         echo "there is an error in mbti type";
